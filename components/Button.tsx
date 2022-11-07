@@ -2,7 +2,7 @@ import clsx from 'clsx';
 
 interface ButtonProps {
     /**
-     * Is this the principal call to action on the page?
+     * Button variant
      */
     primary?: boolean;
     /**
@@ -24,7 +24,8 @@ interface ButtonProps {
 }
 
 /**
- * Button UI component for user interaction
+ * Button UI component for user interaction. For example, you can use a button for allowing the functionality of
+ * submitting a form, opening a dialog, canceling an action, or performing a delete operation.
  */
 export const Button = ({
     primary = false,

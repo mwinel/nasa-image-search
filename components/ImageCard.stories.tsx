@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { ImageCard } from './ImageCard';
 
 export default {
-    title: 'Example/ImageCard',
+    title: 'NASA IMAGE SEARCH/ImageCard',
     component: ImageCard,
 } as ComponentMeta<typeof ImageCard>;
 

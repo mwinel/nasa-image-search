@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { SearchInput } from './SearchInput';
 
 export default {
-    title: 'Example/SearchInput',
+    title: 'NASA IMAGE SEARCH/SearchInput',
     component: SearchInput,
 } as ComponentMeta<typeof SearchInput>;
 

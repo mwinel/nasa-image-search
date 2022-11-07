@@ -1,12 +1,16 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { userEvent, within, screen, } from '@storybook/testing-library';
+import { userEvent, within, screen } from '@storybook/testing-library';
 import { expect } from '@storybook/jest';
 
 import { Button } from './Button';
 
 export default {
-    title: 'Example/Button',
+    title: 'NASA IMAGE SEARCH/Button',
     component: Button,
+    parameters: {
+        componentSubtitle:
+            'Buttons allow users to trigger an action or event with a single click.',
+    },
 } as ComponentMeta<typeof Button>;
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;

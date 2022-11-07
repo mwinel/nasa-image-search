@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { SearchResults } from './SearchResults';
 
 export default {
-    title: 'Example/SearchResults',
+    title: 'NASA IMAGE SEARCH/SearchResults',
     component: SearchResults,
     decorators: [(results) => <div style={{ margin: '3em' }}>{results()}</div>],
 } as ComponentMeta<typeof SearchResults>;

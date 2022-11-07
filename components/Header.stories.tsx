@@ -5,7 +5,7 @@ import { expect } from '@storybook/jest';
 import { Header } from './Header';
 
 export default {
-    title: 'Example/Header',
+    title: 'NASA IMAGE SEARCH/Header',
     component: Header,
 } as ComponentMeta<typeof Header>;
 
