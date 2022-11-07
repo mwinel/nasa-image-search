@@ -5,6 +5,9 @@ import { ImageCard } from './ImageCard';
 export default {
     title: 'NASA IMAGE SEARCH/ImageCard',
     component: ImageCard,
+    parameters: {
+        componentSubtitle: 'Image card component that displays a single image on the search page.',
+    }
 } as ComponentMeta<typeof ImageCard>;
 
 const Template: ComponentStory<typeof ImageCard> = () => (

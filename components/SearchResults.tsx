@@ -3,6 +3,7 @@ import { ImageCard } from './ImageCard';
 interface SearchResultsProps {
     /**
      * Search results
+     * 
      * Array of image objects
      * @type {Array}
      * @default []

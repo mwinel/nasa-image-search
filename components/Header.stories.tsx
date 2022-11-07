@@ -7,6 +7,9 @@ import { Header } from './Header';
 export default {
     title: 'NASA IMAGE SEARCH/Header',
     component: Header,
+    parameters: {
+        componentSubtitle: 'Header component that displays the title of the page.',
+    }
 } as ComponentMeta<typeof Header>;
 
 const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />;

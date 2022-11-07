@@ -6,6 +6,9 @@ import { SearchInput } from './SearchInput';
 export default {
     title: 'NASA IMAGE SEARCH/SearchInput',
     component: SearchInput,
+    parameters: {
+        componentSubtitle: 'Search input component that allows users to search for images.',
+    }
 } as ComponentMeta<typeof SearchInput>;
 
 const Template: ComponentStory<typeof SearchInput> = () => {

@@ -6,6 +6,9 @@ export default {
     title: 'NASA IMAGE SEARCH/SearchResults',
     component: SearchResults,
     decorators: [(results) => <div style={{ margin: '3em' }}>{results()}</div>],
+    parameters: {
+        componentSubtitle: 'Search results component that displays a list of images.',
+    }
 } as ComponentMeta<typeof SearchResults>;
 
 const Template: ComponentStory<typeof SearchResults> = (args) => (
