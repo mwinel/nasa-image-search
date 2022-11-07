@@ -34,7 +34,7 @@ export const Button = ({
     ...props
 }: ButtonProps) => {
     const mode = primary
-        ? 'bg-blue-500 text-white hover:bg-blue-600'
+        ? 'bg-blue-600 text-white hover:bg-blue-700'
         : 'bg-transparent text-gray-800 border hover:bg-gray-50';
 
     return (
