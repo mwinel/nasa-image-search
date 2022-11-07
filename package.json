@@ -1,7 +1,6 @@
 {
   "name": "@mwinel/nasa-image-search",
   "version": "0.1.0",
-  "private": true,
   "author": "Nelson Murungi",
   "license": "MIT",
   "repository": {
@@ -19,7 +18,8 @@
     "build-storybook-docs": "build-storybook  --docs",
     "test-storybook": "test-storybook",
     "build:ds": "cross-env BABEL_ENV=production babel src -d dist",
-    "chromatic": "npx chromatic --project-token=2815d6aca661"
+    "chromatic": "npx chromatic --project-token=2815d6aca661",
+    "release": "auto shipit --base-branch=main"
   },
   "dependencies": {
     "@babel/cli": "^7.19.3",
