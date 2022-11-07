@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { userEvent, within, screen, } from '@storybook/testing-library';
-import { expect, jest } from '@storybook/jest';
+import { expect } from '@storybook/jest';
 
 import { Button } from './Button';
 
