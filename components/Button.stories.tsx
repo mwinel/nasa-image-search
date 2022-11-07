@@ -1,4 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { userEvent, within, screen, } from '@storybook/testing-library';
+import { expect, jest } from '@storybook/jest';
 
 import { Button } from './Button';
 
@@ -30,4 +32,16 @@ export const Small = Template.bind({});
 Small.args = {
     size: 'small',
     label: 'Button',
+};
+
+export const WithInteractions = (args: any) => <Button {...args} />;
+WithInteractions.args = {
+    primary: true,
+    label: 'Button',
+    onClick: () => console.log('clicked'),
+};
+
+WithInteractions.play = async ({ canvasElement }: any) => {
+    const canvas = within(canvasElement);
+    expect(screen.getByText(/button/i)).toBeInTheDocument();
 };

@@ -40,6 +40,7 @@ export const Button = ({
     return (
         <button
             type="button"
+            role="button"
             className={clsx(
                 'inline-flex items-center px-4 py-2 rounded-lg font-semibold',
                 mode,

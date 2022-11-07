@@ -10,6 +10,7 @@
     "format": "npx prettier --write .",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
+    "test-storybook": "test-storybook",
     "chromatic": "npx chromatic --project-token=2815d6aca661"
   },
   "dependencies": {
@@ -33,13 +34,16 @@
     "@storybook/addon-links": "^6.5.13",
     "@storybook/addon-postcss": "^2.0.0",
     "@storybook/builder-webpack5": "^6.5.13",
+    "@storybook/jest": "^0.0.10",
     "@storybook/manager-webpack5": "^6.5.13",
     "@storybook/react": "^6.5.13",
+    "@storybook/test-runner": "^0.9.0",
     "@storybook/testing-library": "^0.0.13",
     "autoprefixer": "^9.8.8",
     "babel-loader": "^8.3.0",
     "chromatic": "^6.11.4",
     "eslint-plugin-storybook": "^0.6.7",
+    "jest": "^27.5.1",
     "postcss": "^7.0.39",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   },
