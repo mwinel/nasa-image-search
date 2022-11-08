@@ -1,4 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## NASA Image Search
+
+This is a simple web app that allows you to search images by [NASA](https://www.nasa.gov/)
+
+## Demo Link
+
+```
+https://nasa-image-search-three.vercel.app/
+```
 
 ## Getting Started
 
@@ -18,17 +26,16 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+## Storybook
 
-To learn more about Next.js, take a look at the following resources:
+The frontend UI components are built (into a Design System), tested, reviewed and packaged in isolation using [Storybook](https://storybook.js.org/).
 
--   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
--   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The design system can be found here [NASA Image Search design system](https://6367f0aed37a0a2c90b92438-vtljkbsxjg.chromatic.com/?path=/story/nasa-image-search-introduction--page).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Run story book:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+npm run storybook
+# or
+yarn storybook
+```
