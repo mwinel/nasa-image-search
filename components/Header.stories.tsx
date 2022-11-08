@@ -26,5 +26,5 @@ WithInteractions.args = {
 
 WithInteractions.play = async ({ canvasElement }: any) => {
     const canvas = within(canvasElement);
-    expect(screen.getByText(/nasa image search/i)).toBeInTheDocument();
+    expect(canvas.getByText(/nasa image search/i)).toBeInTheDocument();
 };

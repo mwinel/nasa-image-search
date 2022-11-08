@@ -9,6 +9,10 @@ interface SearchInputProps {
      */
     name?: string;
     /**
+     * Label for search input field
+     */
+    label?: string;
+    /**
      * Placeholder text for search input field
      */
     placeholder?: string;
@@ -24,6 +28,10 @@ interface SearchInputProps {
      * Callback function for when the search input field changes
      */
     onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+    /**
+     * Callback function for when the search input field is submitted
+     */
+    onSubmit?: () => void;
 }
 
 /**
@@ -31,27 +39,35 @@ interface SearchInputProps {
  */
 export const SearchInput = ({
     name,
+    label,
     placeholder,
     value,
     onChange,
+    onSubmit,
     className,
     ...props
 }: SearchInputProps) => {
     return (
-        <div className="flex items-center justify-center">
+        <div className={clsx('flex items-center justify-center', className)}>
+            <label htmlFor={name} className="sr-only">
+                {name}
+            </label>
             <input
                 type="search"
                 name={name}
-                className={clsx(
-                    'w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500',
-                    className
-                )}
+                aria-label={name}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
                 placeholder={placeholder}
                 value={value}
                 onChange={onChange}
                 {...props}
             />
-            <Button label="Search" primary className="ml-2" />
+            <Button
+                label="Search"
+                primary
+                className="ml-2"
+                onClick={onSubmit}
+            />
         </div>
     );
 };

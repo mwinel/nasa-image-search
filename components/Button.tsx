@@ -30,12 +30,13 @@ interface ButtonProps {
 export const Button = ({
     primary = false,
     size = 'medium',
+    onClick,
     className,
     label,
     ...props
 }: ButtonProps) => {
     const mode = primary
-        ? 'bg-blue-600 text-white hover:bg-blue-700'
+        ? 'bg-blue-600 text-white border border-blue-600 hover:bg-blue-700'
         : 'bg-transparent text-gray-800 border hover:bg-gray-50';
 
     return (
@@ -43,13 +44,14 @@ export const Button = ({
             type="button"
             role="button"
             className={clsx(
-                'inline-flex items-center px-4 py-2 rounded-lg font-semibold',
+                'inline-flex items-center justify-center px-6 py-2 rounded-lg font-semibold lg:w-64',
                 mode,
                 size === 'small' && 'text-sm',
                 size === 'medium' && 'text-base',
                 size === 'large' && 'text-lg',
                 className
             )}
+            onClick={onClick}
             {...props}
         >
             {label}

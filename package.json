@@ -24,6 +24,7 @@
   "dependencies": {
     "@babel/cli": "^7.19.3",
     "@storybook/addon-a11y": "^6.5.13",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.8",
@@ -32,6 +33,7 @@
     "cross-env": "^7.0.3",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.2",
+    "lodash.debounce": "^4.0.8",
     "next": "13.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -51,6 +53,7 @@
     "@storybook/react": "^6.5.13",
     "@storybook/test-runner": "^0.9.0",
     "@storybook/testing-library": "^0.0.13",
+    "@types/lodash.debounce": "^4.0.7",
     "autoprefixer": "^9.8.8",
     "babel-loader": "^8.3.0",
     "chromatic": "^6.11.4",

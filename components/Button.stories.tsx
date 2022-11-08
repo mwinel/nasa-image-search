@@ -47,5 +47,5 @@ WithInteractions.args = {
 
 WithInteractions.play = async ({ canvasElement }: any) => {
     const canvas = within(canvasElement);
-    expect(screen.getByText(/button/i)).toBeInTheDocument();
+    expect(canvas.getByText(/button/i)).toBeInTheDocument();
 };
