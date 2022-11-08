@@ -18,6 +18,10 @@ interface ButtonProps {
      */
     label: string;
     /**
+     * Button type
+     */
+    type?: 'button' | 'submit' | 'reset';
+    /**
      * Optional click handler
      */
     onClick?: () => void;
@@ -33,6 +37,7 @@ export const Button = ({
     onClick,
     className,
     label,
+    type,
     ...props
 }: ButtonProps) => {
     const mode = primary
@@ -41,7 +46,7 @@ export const Button = ({
 
     return (
         <button
-            type="button"
+            type={type}
             role="button"
             className={clsx(
                 'inline-flex items-center justify-center px-6 py-2 rounded-lg font-semibold lg:w-64',

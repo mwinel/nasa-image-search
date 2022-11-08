@@ -67,6 +67,7 @@ export const SearchInput = ({
                 primary
                 className="ml-2"
                 onClick={onSubmit}
+                type="submit"
             />
         </div>
     );
