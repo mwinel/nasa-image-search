@@ -1,3 +1,15 @@
+# v0.1.4 (Tue Nov 08 2022)
+
+#### ⚠️ Pushed to `main`
+
+- update README.md ([@mwinel](https://github.com/mwinel))
+
+#### Authors: 1
+
+- Nelson M ([@mwinel](https://github.com/mwinel))
+
+---
+
 # v0.1.3 (Tue Nov 08 2022)
 
 #### ⚠️ Pushed to `main`
