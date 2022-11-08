@@ -1,6 +1,6 @@
 ## NASA Image Search
 
-This is a simple web app that allows you to search images by [NASA](https://www.nasa.gov/)
+This is a simple web app that allows you to search images by [NASA](https://www.nasa.gov/).
 
 ## Demo Link
 
